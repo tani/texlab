@@ -14,6 +14,7 @@ async fn create_scenario(
     *scenario.client.options.lock().await = Options {
         latex: Some(LatexOptions {
             forward_search: None,
+            formatting: None,
             lint: None,
             build: Some(LatexBuildOptions {
                 executable: Some(executable.into()),

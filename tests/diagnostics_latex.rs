@@ -10,6 +10,7 @@ async fn disabled() {
             *scenario.client.options.lock().await = Options {
                 latex: Some(LatexOptions {
                     forward_search: None,
+                    formatting: None,
                     lint: Some(LatexLintOptions {
                         on_change: Some(false),
                         on_save: Some(false),
@@ -38,6 +39,7 @@ async fn on_open() {
             *scenario.client.options.lock().await = Options {
                 latex: Some(LatexOptions {
                     forward_search: None,
+                    formatting: None,
                     lint: Some(LatexLintOptions {
                         on_change: Some(false),
                         on_save: Some(true),
@@ -68,6 +70,7 @@ async fn on_save() {
             *scenario.client.options.lock().await = Options {
                 latex: Some(LatexOptions {
                     forward_search: None,
+                    formatting: None,
                     lint: Some(LatexLintOptions {
                         on_change: Some(false),
                         on_save: Some(true),
@@ -123,6 +126,7 @@ async fn on_change() {
             *scenario.client.options.lock().await = Options {
                 latex: Some(LatexOptions {
                     forward_search: None,
+                    formatting: None,
                     lint: Some(LatexLintOptions {
                         on_change: Some(true),
                         on_save: Some(true),
